@@ -1,0 +1,15 @@
+<?php
+require "../konekcija/konekcija.php";
+require "../modeli/zadatak.php";
+
+$zadatak = trim($_GET["zadatak"]);
+
+$podaci = Zadatak::vratiPodatke($zadatak, $konekcija);
+
+?>
+
+<h2 class="naslovdetalji"><?=$podaci->naziv?></h2>
+
+<h4
+
+
