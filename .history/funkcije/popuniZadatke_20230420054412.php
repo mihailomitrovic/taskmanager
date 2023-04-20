@@ -1,0 +1,25 @@
+<?php
+require "../konekcija/konekcija.php";
+require "../modeli/zadatak.php";
+
+$korisnik = trim($_GET["korisnik"]);
+
+$zadaci = Zadatak::vratiZadatkeZaOpcije($korisnik, $konekcija);
+?>
+
+<?php if ($zadaci == null) { ?>
+<h4>Nema zadataka za izmenu!</h4>
+<?php } else { ?>
+<div id = "levo">
+<h4>Zadatak</h4>
+<select id="zadatak" name="zadatak" onchange="prikazi(this.value); popuniDetalje();"required></select>
+</div>
+<option value="" disabled selected hidden><?= "Zadaci" ?> </option>
+<?php
+
+foreach ($zadaci as $zad) {
+    ?>
+    <option value="<?= $zad->zadatakID ?>"><?= $zad->naziv ?> </option>
+    <?php
+} }
+?>
