@@ -642,6 +642,7 @@ select:invalid {
     width: 400px;
     display: flex;
     flex-direction: column;
+    margin-left: 900px;
 }
 
 .opcija {
