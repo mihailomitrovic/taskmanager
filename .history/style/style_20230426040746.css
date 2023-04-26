@@ -1,0 +1,1583 @@
+@font-face {
+    font-family: "Open Sans", sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+  
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #f7f7f7; 
+    border-radius: 10px;
+} 
+
+.scroller:hover::-webkit-scrollbar-thumb {
+    visibility:visible;
+    cursor: pointer;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+    overflow-y: scroll; 
+}
+
+#content {
+    margin: 60px 0px 0px 60px;
+    width: 30%;
+}
+
+#contentreg {
+    margin: 60px 0px 0px 60px;
+    width: 60%;
+}
+
+#logocontainer_reg {
+    display: flex;
+    width: 220px;
+    position: static;
+    margin-bottom: 50px;
+}
+
+#logo {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.input {
+    border-radius: 5px;
+    height: 45px;
+    background-color: #f6f6f6;
+    border-width: 0;
+}
+
+input {
+    text-indent: 10px;
+}
+
+#opis {
+    height: 95px;
+    overflow-y: scroll;
+}
+
+label {
+    justify-content: center;
+}
+
+.button {
+    background: transparent;
+    color: #ffffff;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #1bb793;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    z-index: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.button:hover:before {
+    width: 100%;
+}
+
+h2 {
+    color: #17161a;
+}
+
+h2.title {
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    font-size: 70px;
+    margin-bottom: 0;
+}
+
+h2:hover {
+    cursor: default;
+}
+
+a {
+    color: #17161a;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+a:hover {
+    color: #6d6c6f;
+}
+
+#nosignupcontainer {
+    margin: 0px 0px 40px 30px;
+    width: 400px;
+}
+
+.buttoncontainer {
+    position: relative;
+    border-radius: 5px;
+    background-color: #17161a;
+    height: 45px;
+    width: 150px;
+    z-index: 0;
+    margin-top: 30px;
+}
+
+.buttoncontainerizmena {
+    position: relative;
+    border-radius: 5px;
+    background-color: #17161a;
+    height: 45px;
+    width: 120px;
+    z-index: 0;
+    margin-top: 30px;
+}
+
+.buttoncontainerreg {
+    position: relative;
+    border-radius: 5px;
+    background-color: #17161a;
+    height: 45px;
+    width: 150px;
+    z-index: 0;
+    margin-top: 30px;
+}
+
+/* POCETNA */
+
+#buttonwrapper {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.button2 {
+    background: transparent;
+    color: #ffffff;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.button2::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #eb7178;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    z-index: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.button2:hover:before {
+    width: 100%;
+}
+
+#titlecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+    justify-content: space-between;
+}
+
+h2.title2 {
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    font-size: 70px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.3px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#content_pocetna {
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.swirl {
+    width: 1400px;
+    height: 850px;
+    z-index: -1;
+}
+
+#logocontainer {
+    display: flex;
+    width: 220px;
+    position: static;
+    margin-bottom: 150px;
+}
+
+/* REGISTRACIJA */
+
+#zelena {
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    font-size: 45px;
+    margin-bottom: 30px;
+    color: #eb7178;
+}
+
+.zvezdica {
+    color: #eb7178;
+    background-color: transparent;
+}
+
+.buttonreg {
+    background: transparent;
+    color: #ffffff;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.buttonreg::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #1bb793;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    z-index: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.buttonreg:hover:before {
+    width: 100%;
+}
+
+/* PRIJAVA */
+
+#logolink {
+    margin-top: 0;
+}
+
+#crvena {
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    font-size: 45px;
+    margin-bottom: 30px;
+    color: #1bb793;
+}
+
+.datum2 {
+    color: #f7f7f7;
+    margin-left: 20px;
+}
+
+.button2b {
+    background: transparent;
+    color: #ffffff;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.button2b::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #eb7178;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    z-index: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.button2b:hover:before {
+    width: 100%;
+}
+
+.reroute {
+    margin-top: 10px;
+}
+
+/* NAVIGACIJA */
+
+#logocontainer_nav {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 30px 30px 30px;
+    justify-content: space-between;
+}
+
+#linkovi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+#buttoncontainernav {
+    border-radius: 5px;
+    background-color: #17161a;
+    height: 45px;
+    width: 150px;
+    z-index: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    justify-content: center;
+    background-color: #f6f6f6;
+    margin-top: -5px;
+    margin-right: 0;
+}
+  
+.topnav a {
+    float:left;
+    display: block;
+    color: #17161a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    justify-content: center;
+    margin-top: 10px;
+}
+  
+.topnav a.active {
+    width: 100px;
+    margin-left: 60px;
+    padding-left: 0;
+    float:left;
+    display: block;
+    color: #17161a;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    justify-content: center;
+}
+  
+  .topnav .icon {
+    display: none;
+  }
+
+@media screen and (max-width: 800px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      margin-right: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .topnav.responsive {
+        position: relative; 
+        padding-bottom: 10px;     
+        margin-top: -5px;        
+        background-color: #f6f6f6;
+        width: 100%;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: right;
+      margin-right: 20px;
+    }
+  }
+
+/* GLAVNA */
+
+.filterdiv {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    margin: 300px 200px 0px 50px;
+    width: 500px;
+}
+
+.zadaci {
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    display: flex;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 48px, black calc(100% - 48px), transparent 100%);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #17161a;
+    background-color: #ffffff;
+    height: 250px;
+    display: block; 
+    overflow-y: auto;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 48px, black calc(100% - 48px), transparent 100%);
+    border-radius: 5px;
+}
+
+table tbody {
+    display: table; 
+    width: 100%;
+    overflow-y: auto;
+    text-indent: 5px;
+}
+
+td {
+    border-bottom: 0.5pt solid #6d6c6f;
+    width: 100%;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+th {
+    text-align: left;
+    border: none;
+    width: 100%;
+    color: #1bb793;
+}
+
+tbody > tr:hover td {
+   background-color: #f7f7f7;
+   color: #17161a;
+   cursor: pointer;
+}
+
+h5 {
+    margin: 5px 0px 5px 0px;
+}
+
+h6 {
+    font-size: small;
+    font-weight: 500;
+    color: #6d6c6f;
+    margin: 0px 0px 5px 0px;
+    border-bottom: #6d6c6f;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+
+}
+
+#crvenah3 {
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #eb7178;
+}
+
+#zelenah3 {
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #1bb793;
+}
+
+.containerwrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    position: relative;
+    width: 80%;
+    margin-left: 60px;
+}
+
+.containerwrappersub {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+}
+
+.data {
+    margin: 80px 60px 0px 80px;
+    position: relative;
+    background-color: #BEBDC3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 400px;
+    width: 70%;
+}
+
+.dataispod {
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
+
+.naslovdetalji {
+    color: #f7f7f7;
+    margin-left: 20px;
+}
+
+.opisdetalji {
+    color: #f7f7f7;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1pt solid #f7f7f7;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: red;
+}
+
+.kategorijadetalji {
+    color: #3a3a3a;
+    margin: 0px 0px 30px 20px;
+}
+
+.kategorijadetalji span {
+    background-color: #f7f7f7;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.detaljilevo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    width: 50%;
+    background-color: purple;
+}
+
+
+.detaljilevosub {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.datum {
+    color: #f7f7f7;
+    margin-left: 20px;
+}
+
+#buttonwrapperdetalji {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0px 0px 20px 20px;
+}
+
+.dugmedetalji {
+    background-color: #f7f7f7;
+    color: #3a3a3a;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.dugmedetalji:hover {
+    opacity: 0.8;
+}
+
+.slikacontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 50%;
+}
+
+.slikawrap {
+    height: 80%;
+    width: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.slikawrap img {
+    object-fit: contain;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+}
+
+/* DODAJ ZADATAK */
+
+h4 {
+    font-weight: 500;
+}
+
+textarea {
+    font-family: "Open Sans", sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+    background-color: #f6f6f6;
+    border: none;
+    resize: none;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container_unos {
+    margin: 0px 0px 0px 60px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    height: 45px;
+    background-color: #f6f6f6;
+    border-width: 0;
+    text-indent: 10px; 
+    background-image: url("../slike/arrow.svg");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+select:invalid {
+    color: #757575;
+}
+
+.inputslika {
+    border-radius: 5px;
+    height: 45px;
+    background-color: #f6f6f6;
+    border: 2.5pt solid #757575;
+    background-image: url("../slike/addgrey.svg");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    text-indent: 5px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.inputslika p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.inputslika:hover {
+    cursor: pointer;
+    border: 2.5pt solid #17161a;
+    color: #17161a;
+    background-image: url("../slike/add.svg");
+}
+
+#file_upload {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#prikazilink p {
+    font-weight: 400;
+}
+
+/* IZMENI */
+
+.buttonizmena {
+    background: transparent;
+    color: #ffffff;
+    height: 45px;
+    width: 120px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.button2izmena {
+    background: transparent;
+    color: #ffffff;
+    height: 45px;
+    width: 120px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.buttonizmena::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #1bb793;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    z-index: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.buttonizmena:hover:before {
+    width: 100%;
+}
+
+.button2izmena::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #eb7178;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    z-index: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.button2izmena:hover:before {
+    width: 100%;
+}
+
+.skriveno {
+    display: hidden;
+    flex-direction: row;
+    width: 90%;
+}
+
+#formaizmena {
+    display: flex;
+    flex-direction: row;
+}
+
+.status {
+    display: flex;
+    flex-direction: row;
+}
+
+.container_izmena {
+    margin: px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+}
+
+#levo {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+#zadatak {
+    width: 300px;
+}
+
+#desno {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.opcija {
+    background-color: red;
+}
+
+label {
+    margin-right: 20px;
+}
+
+#nemazadataka {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#nemazadatakalink {
+    margin: 0px -2px 0px 5px;
+    color: #1bb793;
+}
+
+#uzvicnik {
+    margin-left: 0;
+}
+
+#prikazi {
+    visibility:hidden;
+    color: #1bb793;
+}
+
+#prikazi h4 {
+    font-weight: 700;
+}
+
+.finish button {
+    background-image: url("../slike/finish.svg");
+    background-size: 23px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.finish {
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.finish button:hover {
+    cursor: pointer;
+    background-image: url("../slike/finishgreen.svg");
+    background-repeat: no-repeat;
+}
+
+.delete {
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete button {
+    background-image: url("../slike/delete.svg");
+    background-size: 23px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.delete button:hover {
+    cursor: pointer;
+    background-image: url("../slike/deletered.svg");
+    background-repeat: no-repeat;
+}
+
+.undo {
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.undo button {
+    background-image: url("../slike/undo.svg");
+    background-size: 23px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.undo button:hover {
+    cursor: pointer;
+    background-image: url("../slike/undored.svg");
+    background-repeat: no-repeat;
+}
+
+#prikaziizmeni {
+    visibility:hidden;
+    padding-top: 10px;
+    color: #1bb793;
+}
+
+#prikaziizmeni h4 {
+    font-weight: 700;
+}
+
+#prikaziobrisi {
+    visibility:hidden;
+    padding-top: 10px;
+    color: #1bb793;
+}
+
+#prikaziobrisi h4 {
+    font-weight: 700;
+}
+
+.datadeo {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: -50px;
+}
+
+.datadeo1 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: 50px;
+}
+
+
+.slikawrap1 {
+    max-height: 45px;
+    max-width: 45px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.slikawrap1 img {
+    border-radius: 5px;
+    overflow:hidden;
+    object-fit: cover;
+}
+
+.containerwrapperglavna {
+    display: flex;
+    flex-direction: row;
+}
+
+#prikazilink {
+    padding-top: 10px;
+    color: #1bb793;
+}
+
+#prikazilink h4 {
+    font-weight: 700;
+}
+
+#slikadiv {
+    width:250px;
+}
+
+.slikawrapnad {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.inputslika1 {
+    border-radius: 5px;
+    height: 45px;
+    background-color: #f6f6f6;
+    border: 3pt solid #757575;
+    background-image: url("../slike/addgrey.svg");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    text-indent: 10px;
+    justify-content: flex-start;
+    width: 40%;
+}
+
+.inputslika1:hover {
+    cursor: pointer;
+    border: 3pt solid #17161a;
+    color: #17161a;
+    background-image: url("../slike/add.svg");
+}
+
+.inputslika2 {
+    border-radius: 5px;
+    height: 45px;
+    background-color: #f6f6f6;
+    border: 3pt solid #757575;
+    background-image: url("../slike/deletegrey.svg");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    text-indent: 10px;
+    justify-content: flex-start;
+    width: 40%;
+}
+
+.inputslika2:hover {
+    cursor: pointer;
+    border: 3pt solid #17161a;
+    color: #17161a;
+    background-image: url("../slike/delete.svg");
+}
+
+.inputslika1b {
+    border-radius: 5px;
+    height: 45px;
+    background-color: #f6f6f6;
+    border: 3pt solid #17161a;
+    background-image: url("../slike/addgrey.svg");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    text-indent: 10px;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+.inputslika1b:hover {
+    cursor: pointer;
+    border: 3pt solid #17161a;
+    color: #17161a;
+    background-image: url("../slike/dodaj.svg");
+}
+
+.krataktekst {
+    display: none;
+}
+
+#izvrsen {
+    accent-color: #1bb793;
+}
+
+#neizvrsen {
+    accent-color: #eb7178;
+}
+
+#buttonwrapperizmena {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+}
+
+.topnav {
+    display: none;
+}
+
+/* RESPONZIVNOST */
+
+@media screen and (max-width: 800px) {
+
+::-webkit-scrollbar {
+        width: 0px;
+}
+
+.nav {
+    display:none;
+}
+
+.topnav {
+    display:block;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+.nav {
+    display:none;
+}
+
+.topnav {
+    display:block;
+}
+
+#formareg {
+    width: 100%;
+}
+
+#content_reg {
+    width: 90%;
+}
+
+#content {
+    margin: 60px 0px 0px 60px;
+    width: 75%;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#buttonwrapper {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+}
+
+.button2b {
+    background: transparent;
+    color: #ffffff;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttonreg {
+    background: transparent;
+    color: #ffffff;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.buttoncontainerreg {
+    position: relative;
+    border-radius: 5px;
+    background-color: #17161a;
+    height: 45px;
+    width: 150px;
+    z-index: 0;
+    margin-top: 30px;
+}
+
+a {
+    color: #17161a;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.container_unos {
+    margin: 0px 0px 30px 60px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #17161a;
+    background-color: #ffffff;
+    height: 80px;
+    display: block; 
+    overflow-y: auto;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 48px, black calc(100% - 48px), transparent 100%);
+    border-radius: 5px;
+}
+
+.opisdetalji {
+    color: #f7f7f7;
+    margin-left: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1pt solid #f7f7f7;
+    width: 90%;
+    word-wrap: break-word;
+    display: flex
+}
+
+.data h4 {
+    font-size: 13px;
+}
+
+#nemazadataka {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#nemazadatakalink {
+    padding-right: -7%;
+    color: #1bb793;
+}
+
+#uzvicnik {
+    margin-left: 0;
+}
+
+.krataktekst {
+    display: inline-block;
+}
+
+.puntekst {
+    display: none;
+}
+
+.inputslika {
+    display:block;
+    border-radius: 5px;
+    height: 45px;
+    background-color: #f6f6f6;
+    border: 1.5pt solid black;
+    background-image: url("../slike/add.svg");
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+    color: black;    
+    font-size: small;    
+    padding:10px;
+    width: 100%;
+    text-align:left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.datum2 {
+    color: #f7f7f7;
+    margin-left: 20px;
+}
+
+.datum {
+    color: #f7f7f7;
+    margin-left: 20px;
+}
+
+.slikacontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    align-self: center;
+    width: 30%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: red;
+}
+
+.slikawrap {
+    max-height: 80%;
+    max-width: 80%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    overflow: hidden;
+    align-self: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px #555555;
+}
+
+.slikawrap img {
+    border-radius: 5px;
+    overflow:hidden;
+}
+
+#buttonwrapperdetalji {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0px 20px 0px 20px;
+    justify-content: space-between;
+}
+
+.dugmedetalji {
+    background-color: #f7f7f7;
+    color: #3a3a3a;
+    height: 45px;
+    width: 110px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.detaljilevosub {
+    display: flex;
+    flex-direction: column;
+}
+
+#formaizmena {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#formaizmena {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+body {
+    background-color: #ffffff;
+    margin-left: -20px;
+    border: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+}
+
+#levo {
+    display: flex;
+    width: 80%;
+}
+
+#zadatak {
+    width: 100%;
+}
+
+#slikadiv {
+    width: 80%;
+}
+
+#buttonwrapperizmena {
+    display: flex;
+    flex-direction: row;
+    min-width: 90%;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    #formaizmena {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #desno {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    
+    .skriveno {
+        display: hidden;
+        flex-direction: column;
+        width: 88%;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    .datadeo {
+        width: 100%;
+        margin-left: -50px;
+    }
+    
+    .datadeo1 {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: -50px;
+    }
+
+    .slikawrapnad {
+        display: flex;
+        flex-direction: row;
+        width: 125%;
+        justify-content: space-between;
+    }
+
+    .detaljilevo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .containerwrapperglavna {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .data {
+        margin: 80px 60px 30px 60px;
+        position: relative;
+        background-color: #BEBDC3;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 90%;
+        margin-bottom: 30px;
+        background-color: red;
+    }
+    
+    .dataispod {
+        background-color: #ffffff;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 1400px) {
+    .krataktekst {
+        display: inline-block;
+    }
+    
+    .puntekst {
+        display: none;
+    }
+
+    .dugmedetalji {
+        background-color: #f7f7f7;
+        color: #3a3a3a;
+        height: 45px;
+        width: 120px;
+        border-radius: 5px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+}
