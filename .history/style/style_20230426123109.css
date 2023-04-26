@@ -1354,6 +1354,7 @@ a {
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    color: red;
 }
 
 .detaljilevosub {
